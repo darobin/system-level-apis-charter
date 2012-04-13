@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en'>
+  <head>
+    <meta charset='utf-8'/>
+    <title>[DRAFT] System Level APIs Working Group Charter</title>
+    <link rel='stylesheet' href='http://www.w3.org/2005/10/w3cdoc.css'/>
+    <link rel='stylesheet' href='http://www.w3.org/Guide/pubrules-style.css'/>
+    <link rel='stylesheet' href='http://www.w3.org/2006/02/charter-style.css'/>
+    <script src='http://www.w3.org/2008/site/js/html5shiv.js'></script>
+    <style type='text/css'>
+      #navbar { font-size: small; }
+      .complete { font-weight: bold; }
+    </style>
+  </head>
+  <body>
+    <div id='template'>
+      <ul id='navbar'>
+        <li><a href='#goals'>Goals</a></li>
+        <li><a href='#scope'>Scope</a></li>
+        <li><a href='#deliverables'>Deliverables</a></li>
+        <li><a href='#coordination'>Dependencies</a></li>
+        <li><a href='#participation'>Participation</a></li>
+        <li><a href='#communication'>Communication</a></li>
+        <li><a href='#decisions'>Decision Policy</a></li>
+        <li><a href='#patentpolicy'>Patent Policy </a></li>
+        <li><a href='#about'>About this Charter</a></li>
+      </ul>
+      <p>
+        <a href='http://www.w3.org/' shape='rect'><img alt='W3C' 
+           src='http://www.w3.org/Icons/w3c_home.png' height='48' width='72' /></a>
+        <a class='domainlogo' href='http://www.w3.org/UbiWeb/' shape='rect'><img
+           src='http://www.w3.org/Icons/ubi212' alt='Ubiquitous Web Domain' /></a> 
+      </p>
+
+      <section id='title'>
+        <h1>[DRAFT] Device APIs Working Group Charter</h1>
+        <p class='mission'>
+          The mission of the <a href='http://www.w3.org/2009/dap/'>Device APIs Working Group</a> is
+          to create client-side APIs that enable the development of Web Applications that interact 
+          with device hardware, services and applications such as the camera, microphone, system 
+          sensors, address books, calendars, and messaging applications.
+        </p>
+        <p>
+          <a href='http://www.w3.org/2004/01/pp-impl/43696/join'>Join the Device APIs Working Group</a>.
+        </p>
+        <table class='summary-table'>
+          <tbody>
+            <tr id='Duration'>
+              <th>End date</th>
+              <td>@@@TBD: 2 years after ratification</td>
+            </tr>
+            <tr>
+              <th>Confidentiality</th>
+              <td>
+                Proceedings are <a
+                href='http://www.w3.org/2005/10/Process-20051014/comm.html#confidentiality-levels'>Public</a>
+              </td>
+            </tr>
+            <tr>
+              <th>Chairs</th>
+              <td>Robin Berjon, Frederick Hirsch</td>
+            </tr>
+            <tr>
+              <th>Team Contact<br/>(FTE %: 20)</th>
+              <td>Dave Ragget, Dominique Hazaël-Massieux</td>
+            </tr>
+            <tr>
+              <th>Usual Meeting Schedule</th>
+              <td>Teleconferences: 1 per week (only as needed)<br/>Face-to-face: 2-3 per year (only as needed)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id='goals'>
+        <h2>Goals</h2>
+        <p>
+          The Device APIs Working Group aims at producing Web client-side APIs that 
+          facilitate deeper integration of Web applications into advanced capabilities 
+          of their host devices.
+        </p>
+        <p>
+          These capabilities include access to a camera, microphone, address book, 
+          calendar, or system information such as network connection and battery level.
+        </p>
+        <p>
+          Adding these advanced features to the Web environment empowers Web developers 
+          to create richer and more context-aware Web applications.
+        </p>
+        <p>
+          Given the sensitive nature of the data and sensors to which these APIs grant access, 
+          the Working Group also aims at crafting APIs that are both secure and privacy-enabling 
+          by design, based on the current Web browser security model. This entails reusing 
+          existing browser-based security metaphors where they apply and looking into innovative 
+          security and privacy mechanisms where they don’t.
+        </p>
+      </section>
+
+      <section class='scope' id='scope'>
+        <h2>Scope</h2>
+        <p>
+          The scope of this Working Group is this creation of API specifications for a device’s 
+          services that can be exposed to Web applications . Devices in this context include 
+          desktop computers, laptop computers, mobile Internet devices (MIDs), cellular phones, 
+          TVs, cameras, and other connected devices.
+        </p>
+        <p>
+          Priority will be given to developing simple and consensual APIs, leaving more complex 
+          features to future versions.
+        </p>
+        <p>
+          This Working Group’s deliverables must address issues of <strong><em>accessibility</em></strong>,
+          <strong><em>internationalization</em></strong>, <strong><em>mobility</em></strong>, 
+          <strong><em>security</em></strong> and <strong><em>privacy</em></strong>.
+        </p>
+        <p>
+          Additionally, comprehensive test suites will be developed for each specification to ensure 
+          interoperability, and the group will create interoperability reports. The group will also 
+          maintain errata as required for the continued relevance and usefulness of the specifications 
+          it produces.
+        </p>
+        <section>
+          <h3>Success Criteria</h3>
+          <p>
+            To advance to Proposed Recommendation, each specification is expected to have two independent 
+            implementations of all features defined in the specification, including implementation on a 
+            constrained device (e.g. mobile phone, TV, camera).
+          </p>
+          <p>
+            APIs that cannot be demonstrated to be implementable securely within the default browser context 
+            will not be released. This does not preclude these APIs to support use cases of installable Web 
+            applications.
+          </p>
+        </section>
+        <section>
+          <h3>Out of Scope</h3>
+          <p>
+            The definition of a policy framework that would allow using the defined APIs into a different 
+            security environment than the default browser context is out of the scope for this group.
+          </p>
+        </section>
+      </section>
+
+      <section class='deliverables' id='deliverables'>
+        <h2>Deliverables</h2>
+        <section id='rec-track'>
+          <h3>Recommendation-Track Deliverables</h3>
+          <p>
+            The working group will deliver the following specifications:
+          </p>
+          <ul>
+            <li>
+              Calendar API, an API to access a calendar service (e.g. to add an entry, to edit an entry, 
+              to delete an entry).
+            </li>
+            <li>
+              Tasks API, an API to access a personal task management / organizer service (e.g. to add, 
+              edit, delete a task).
+            </li>
+            <li id='contacts'>
+              Contacts API, an API to access a contacts or address book service (e.g. to add an entry, 
+              to edit an entry, to delete an entry).
+            </li>
+            <li id='camera'>
+              Capture API, an API to manage a device’s camera and microphone, e.g. to take a picture 
+              or record a sound. This work will be carried out in conjunction with the WebRTC WG.
+            </li>
+            <li id='messaging'>
+              Messaging API, an API to create and send a message. The API may be agnostic to the underlying 
+              messaging service (e.g. e-mail, SMS, MMS).
+            </li>
+            <li id='network'>An API to discover the current network characteristics.</li>
+            <li id='battery'>An API to react to a device power status.</li>
+            <li id='sysinfo'>An API to retrieve data generically from sensors.</li>
+            <li id='applauncher'>
+              An API that allows Web applications to register themselves as handlers/providers based on 
+              identifiers and an API that enables other Web applications to discover these handlers/providers 
+              and gain permission to interact with them. This is commonly known as Web Intents, though the
+              final specification may carry a different name. This work will be carried out in conjunction 
+              with the Web Apps WG.
+            </li>
+            <li id='gallery'>
+              Gallery API, an API to access the user's media gallery services (e.g. pictures, music play lists).
+            </li>
+            <li id='ui'>An API to manage vibration.</li>
+            <li id='menus'>An API to manage application menus.</li>
+            <li id='discovery'>
+              An API to discover and communicate with devices and services on the same device, on the local 
+              network, or directly connected, e.g. by USB and Bluetooth (<a href='#nb'>*</a>).
+            </li>
+            <li id='bt'>An API to interact with services available over Bluetooth.</li>
+            <li id='qr'>An API to process QR codes extracting them from stills or streams and returning their content.</li>
+            <li id='appstore'>
+              An API to install Web apps and to manage a client-side collection of Web apps that a user has installed.
+            </li>
+          </ul>
+          <p>
+            (<span id='nb'>*</span>)<strong>Note</strong>: the Web and TV Interest Group and the Multimodal 
+            Interaction  Working Group are also working on topics related to discovery APIs. The Device APIs 
+            Working Group will liaise with them on these topics. As the discussion evolves, the groups will 
+            investigate the opportunity of creating a separate Working Group dedicated to local device discovery.
+          </p>
+          <p>
+            Where practical, the API specifications should use the <a href='http://www.w3.org/TR/WebIDL/'>Web IDL</a> 
+            formalism.
+          </p>
+          <p>
+            The Working Group may also enter into joint Task Forces with other groups (in particular with the 
+            Web Applications and WebRTC Working Groups), to collaborate on specifications that cross group boundaries.
+          </p>
+        </section>
+        <section>
+          <h3>Other Deliverables</h3>
+          <p>
+            A comprehensive test suite for all features of a specification is necessary to ensure the 
+            specification’s robustness, consistency, and implementability, and to promote interoperability 
+            between User Agents. Therefore, each specification must have a companion test suite, which 
+            should be completed by the end of the Last Call phase, and must be completed, with an 
+            implementation report, before transition from Candidate Recommendation to Proposed Recommendation. 
+            Additional tests may be added to the test suite at any stage of the Recommendation track, and the 
+            maintenance of a implementation report is encouraged.
+          </p>
+          <p>
+            The Working Group may also document in a Working Group Note the useful design patterns shared by 
+            the APIs it is developing.
+          </p>
+          <p>
+            The Working Group is also planning to work on Best Practices for Privacy-sensitive Web applications, 
+            as well as documenting Privacy Use Cases and Requirements in Working Group Notes.
+          </p>
+          <p>
+            Other non-normative documents may be created such as:
+          </p>
+          <ul id='ig-other-deliverables'>
+            <li>Primers</li>
+            <li>Requirements and use case document for specifications</li>
+            <li>Non-normative group notes</li>
+          </ul>
+          <p>
+            Given sufficient resources, this Working Group should review other working groups’ deliverables that 
+            are identified as being relevant to the Working Group’s mission.
+          </p>
+        </section>
+        <section>
+          <h3>Milestones</h3>
+          <blockquote>
+            <p>
+              Bistromathics itself is simply a revolutionary new way of understanding the behaviour of numbers. 
+              Just as Albert Einstein's general relativity theory observed that space was not an absolute but 
+              depended on the observer's movement in time, and that time was not an absolute, but depended on 
+              the observer's movement in space, so it is now realized that numbers are not absolute, but depend 
+              on the observer's movement in restaurants.
+            </p>
+            <p>
+              (...)
+            </p>
+            <p>
+              The first nonabsolute number is the number of people for whom the table is reserved. This will vary 
+              during the course of the first three telephone calls to the restaurant, and then bear no apparent 
+              relation to the number of people who actually turn up, or the number of people who subsequently join 
+              them after the show/match/party/gig, or to the number of people who leave when they see who else has 
+              shown up.
+            </p>
+            <p>
+              The second nonabsolute number is the given time of arrival, which is now known to be one of those 
+              most bizarre mathematical concepts, a recipriversexcluson, a number whose existence can only be 
+              defined as being anything other than itself. In other words, the given time of arrival is the one 
+              moment of time at which it is impossible that any member of the party will arrive. 
+              Recipriversexclusons now play a vital part in many branches of mathematics, including statistics and 
+              accountancy, and also form the basic equations used to engineer the Somebody Else's Problem field.
+            </p>
+            <p>
+              The third and most mysterious piece of nonabsoluteness of all lies in the relationship between the 
+              number of items on the bill, the cost of each item, the number of people at the table and what they
+              are each prepared to pay for. (The number of people who have actually brought any money is only a 
+              sub-phenomenon in this field.)
+            </p>
+          </blockquote>
+          <p>
+            It is a known and well-accepted fact of W3C Working Group life that the dates specified in the Milestones
+            section of a group's charter are recipriversexclusons. The date at which the Working Group will ship that
+            specification at the indicated level of maturity can be before or after the indicated date, or the group
+            may have abandoned the deliverable, but it can never be within the indicated time frame.
+          </p>
+          <p>
+            The maths involved in producing correct recipriversexclusons being complex and resource intensive, the
+            charter's author has decided to simply do without.
+          </p>
+        </section>
+      </section>
+      <section class='dependencies' id='coordination'>
+        <h2>Dependencies</h2>
+        <section>
+          <h3>W3C Groups</h3>
+          <p>
+            This Working Group’s specifications depend upon some specifications being developed by other 
+            Working Groups for example the Web Applications Working Group’s Web IDL specification and
+            several of the Device APIs Working Group's specifications.
+          </p>
+          <p>
+            This Working Group is not aware of any dependencies other Working Groups’ specifications have on 
+            this Working Group’s specifications.
+          </p>
+        </section>
+        <section>
+          <h3>Liaisons</h3>
+          <p>
+            This Working Group expects to maintain contacts with at least the following groups and Activities 
+            within W3C (in alphabetical order):
+          </p>
+          <dl>
+            <dt><a href='http://www.w3.org/2009/dap/'>Device APIs Working Group</a></dt>
+            <dd>
+              The Device APIs Group is chartered to develop APIs that are closely related to several of those
+              in this group's deliverables, but that function inside the browser security model. Such APIs should
+              be closely coordinated as they are likely to feature common aspects.
+            </dd>
+            <dt><a id='html' href='http://www.w3.org/html/wg/'>HTML Working Group</a></dt>
+            <dd>
+              The HTML Working Group’s deliverables cover the security model implemented in Web Browsers; this 
+              security model imposes limitations on what an extended model for Web Applications can achieve.
+            </dd>
+            <dt><a id='wai' href='http://www.w3.org/WAI/'>Web Accessibility Initiative</a>
+                <a href='http://www.w3.org/WAI/PF/'>Protocols and Formats Working Group</a></dt>
+            <dd>
+              To ensure this Working Group’s deliverables support accessibility requirements, particularly with 
+              regard to interoperability with assistive technologies, and inclusion in deliverables of guidance 
+              for implementing the group’s deliverables in ways that support accessibility requirements.
+            </dd>
+            <dt><a id='webapps' href='http://www.w3.org/2008/webapps/'>Web Applications Working Group</a></dt>
+            <dd>
+              This group defines relevant specifications including <cite><a href='http://www.w3.org/TR/WebIDL/'>Web IDL</a></cite>, 
+              and <cite><a href='http://www.w3.org/TR/FileAPI/'>File API</a></cite>.
+            </dd>
+          </dl>
+        </section>
+        <section>
+          <h3>External Groups</h3>
+          <p>
+            The following is a tentative list of external bodies the Working Group should collaborate with:
+          </p>
+          <dl>
+            <dt><a href='http://www.ecma-international.org/memento/TC39.htm' id='tc39'>Ecma International Technical Committee 39 (TC39)</a></dt>
+            <dd>
+              This is the group responsible for EcmaScript standardization, and related EcmaScript features like E4X. As this
+              Working Group is developing EcmaScript APIs, it should collaborate with TC39.
+            </dd>
+          </dl>
+        </section>
+      </section>
+
+      <section class='participation' id='participation'>
+        <h2>Participation</h2>
+        <p>
+          To be successful, this Working Group is expected to have 10 or more active participants for its duration, and 
+          to have the participation of the industry leaders in fields relevant to the specifications it produces.
+        </p>
+        <p>
+          The Chairs and specification Editors are expected to contribute one to two days per week towards the Working 
+          Group. There is no minimum requirement for other participants. However, it should be noted that as defined by 
+          the <a href='http://www.w3.org/2005/10/Process-20051014/groups.html#good-standing'>Process Document</a>, group 
+          participants need to attend most meetings, be familiar with documents and minutes of past meeting, and follow 
+          the relevant mailing lists to be considered in good standing; this is likely to require at least half a day a 
+          week.
+        </p>
+        <p>
+          For each specification the Working Group will name a Test Facilitator whose responsibility is to ensure that a 
+          Test Suite is made available.
+        </p>
+        <p>
+          Based on the input from the group participants, the Chairs may also decide to create task forces that allow 
+          more focused discussions for topics that require specific expertise.
+        </p>
+        <p>
+          This Working Group welcomes participation from non-Members. The group encourages questions and comments on its 
+          public mailing list, <a href='mailto:public-system-apis@w3.org'>public-system-apis@w3.org</a>, which is
+          <a href='http://lists.w3.org/Archives/Public/public-system-apis/'>publicly archived</a> and for which there is 
+          no formal requirement for participation. The group also welcomes non-Members to contribute technical submissions 
+          for consideration, with the agreement from each participant to Royalty-Free licensing of those submissions under 
+          the W3C Patent Policy.
+        </p>
+      </section>
+
+      <section class='communication' id='communication'>
+        <h2>Communication</h2>
+        <p>
+          Most of the technical work of the group is done through discussions on the 
+          <a href='http://lists.w3.org/Archives/Public/public-system-apis/'>public-system-apis@w3.org</a>,
+          the group’s public mailing list. Editors’ drafts and their editing history is available from a public W3C Web 
+          site. The group’s <i>action</i> and <i>issue</i> tracking data is also public, as are the participants-approved
+          <i>minutes</i> from all teleconferences and meetings.
+        </p>
+        <p>
+          In general the Working Group does not hold teleconferences, but a teleconference can be scheduled occasionally
+          at the chairs' discretion if a specific topic seems to warrant synchronous discussion.
+        </p>
+        <p>
+          The group uses a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs 
+          and participants of the group, for Member-only discussions in special cases when a particular participant requests such
+          a discussion.
+        </p>
+        <p>
+          Information about the group (for example, details about deliverables, issues, actions, status, participants) is
+          available from the <a href='http://www.w3.org/groups/system-apis/'>System Level APIs Working Group home page.</a>
+        </p>
+      </section>
+
+      <section class='decisions' id='decisions'>
+        <h2>Decision Policy</h2>
+        <p>
+          As explained in the Process Document (<a href='/Consortium/Process/policies#Consensus'>section 3.3</a>), 
+          this group seeks to make decisions when there is consensus. When the Chair puts a question and observes
+          dissent, after due consideration of different opinions, the Chair should record a decision (possibly 
+          after a formal vote) and any objections, and move on.
+        </p>
+        <p>
+          Asynchronous decisions that are attained through the mailing list, possibly using a “Call for Consensus”
+          process are preferred, but synchronous decisions made during a teleconference or a face-to-face meeting
+          are valid provided that the topic they address was clearly outlined in a public agenda posted one week
+          earlier so that non-participating parties have a chance to voice their views ahead of time.
+        </p>
+        <p>
+          This charter is written in accordance with <a href='http://www.w3.org/Consortium/Process/policies#Votes'>Section 3.4,
+          Votes</a> of the W3C Process Document and includes no voting procedures beyond what the Process Document requires.
+        </p>
+      </section>
+
+      <section class='patent' id='patentpolicy'>
+        <h2>Patent Policy</h2>
+        <p>
+          This Working Group operates under the <a href='http://www.w3.org/Consortium/Patent-Policy-20040205/'>W3C Patent
+          Policy</a> (5 February 2004 Version). To promote the widest adoption of Web standards, W3C seeks to issue 
+          Recommendations that can be implemented, according to this policy, on a Royalty-Free basis.
+        </p>
+        <p>
+          For more information about disclosure obligations for this group, please see the 
+          <a href='http://www.w3.org/2004/01/pp-impl/'>W3C Patent Policy Implementation</a>.
+        </p>
+      </section>
+
+      <section class='patent' id='about'>
+        <h2>About this Charter</h2>
+        <p>
+          This charter for this Working Group has been created according to 
+          <a href='http://www.w3.org/Consortium/Process/groups#GAGeneral'>section 6.2</a> of the 
+          <a href='http://www.w3.org/Consortium/Process'>Process Document</a>. In the event of a conflict between this 
+          document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+        </p>
+        <p>
+          See also the <a href='/2009/05/DeviceAPICharter'>previous charter</a> for this group, and the 
+          <a href='/2010/11/DeviceAPICharter'>version of this charter that was reviewed by the W3C Advisory Committee</a>.
+        </p>
+        <hr />
+        <address>
+          Editor: <a href='http://berjon.com/'>Robin Berjon</a>.
+        </address>
+      </section>
+      <p class='copyright'><a rel='Copyright'
+      href='http://www.w3.org/Consortium/Legal/ipr-notice#Copyright'>Copyright</a>©
+      2012 <a href='http://www.w3.org/'><acronym
+      title='World Wide Web Consortium'>W3C</acronym></a><sup>®</sup> (<a
+      href='http://www.csail.mit.edu/'><acronym
+      title='Massachusetts Institute of Technology'>MIT</acronym></a>, <a
+      href='http://www.ercim.eu/'><acronym
+      title='European Research Consortium for Informatics and Mathematics'>ERCIM</acronym></a>,
+      <a href='http://www.keio.ac.jp/'>Keio</a>), All Rights Reserved.</p>
+    </div>
+  </body>
+</html>
