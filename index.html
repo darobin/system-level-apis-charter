@@ -77,34 +77,24 @@
       <section id='goals'>
         <h2>Goals</h2>
         <p>
-          The Device APIs Working Group aims at producing Web client-side APIs that 
-          facilitate deeper integration of Web applications into advanced capabilities 
-          of their host devices.
+          The System Level APIs Working Group aims to produce APIs that integrate closely with the
+          operating system's functionality, thereby enabling an entire applicative ecosystem to be
+          written using nothing but Web technology.
         </p>
         <p>
-          These capabilities include access to a camera, microphone, address book, 
-          calendar, or system information such as network connection and battery level.
-        </p>
-        <p>
-          Adding these advanced features to the Web environment empowers Web developers 
-          to create richer and more context-aware Web applications.
-        </p>
-        <p>
-          Given the sensitive nature of the data and sensors to which these APIs grant access, 
-          the Working Group also aims at crafting APIs that are both secure and privacy-enabling 
-          by design, based on the current Web browser security model. This entails reusing 
-          existing browser-based security metaphors where they apply and looking into innovative 
-          security and privacy mechanisms where they don’t.
+          Creating the ability to produce applications relying primarily on Web technology, even if
+          outside the browser's security model, extends the reach of the Web to new places and opens
+          the door to greater cooperation between the Web and the operating system.
         </p>
       </section>
-
+      
       <section class='scope' id='scope'>
         <h2>Scope</h2>
         <p>
           The scope of this Working Group is this creation of API specifications for a device’s 
-          services that can be exposed to Web applications . Devices in this context include 
-          desktop computers, laptop computers, mobile Internet devices (MIDs), cellular phones, 
-          TVs, cameras, and other connected devices.
+          services and capabilities that can not be exposed safely to Web applications. Devices 
+          in this context include  desktop computers, laptop computers, mobile Internet devices 
+          (MIDs), cellular phones, TVs, cameras, and other connected devices.
         </p>
         <p>
           Priority will be given to developing simple and consensual APIs, leaving more complex 
@@ -121,6 +111,12 @@
           maintain errata as required for the continued relevance and usefulness of the specifications 
           it produces.
         </p>
+        <p>
+          Note that this group does not presume of the exact context in which these APIs will be used,
+          beyond the fact that they will not be available in security-sensitive settings such as arbitrary
+          Web content. It may be possible to make use of this functionality in traditional applications,
+          just as well as it may be exposed for instance to browser extensions.
+        </p>
         <section>
           <h3>Success Criteria</h3>
           <p>
@@ -129,16 +125,9 @@
             constrained device (e.g. mobile phone, TV, camera).
           </p>
           <p>
-            APIs that cannot be demonstrated to be implementable securely within the default browser context 
-            will not be released. This does not preclude these APIs to support use cases of installable Web 
-            applications.
-          </p>
-        </section>
-        <section>
-          <h3>Out of Scope</h3>
-          <p>
-            The definition of a policy framework that would allow using the defined APIs into a different 
-            security environment than the default browser context is out of the scope for this group.
+            APIs that are demonstrated to be implementable with the default browser security context
+            should not be released by this group; it is recommended instead that they be transferred
+            to the Web Applications or Device APIs Working Groups.
           </p>
         </section>
       </section>
@@ -152,55 +141,96 @@
           </p>
           <ul>
             <li>
-              Calendar API, an API to access a calendar service (e.g. to add an entry, to edit an entry, 
-              to delete an entry).
+              Alarm API. An API to manage the system's alarm daemon.
             </li>
             <li>
-              Tasks API, an API to access a personal task management / organizer service (e.g. to add, 
-              edit, delete a task).
+              Application API. An API to launch other applications and communicate with them.
             </li>
-            <li id='contacts'>
-              Contacts API, an API to access a contacts or address book service (e.g. to add an entry, 
-              to edit an entry, to delete an entry).
+            <li>
+              Bluetooth API. A low-level API to interact with the Bluetooth hardware available
+              on some devices.
             </li>
-            <li id='camera'>
-              Capture API, an API to manage a device’s camera and microphone, e.g. to take a picture 
-              or record a sound. This work will be carried out in conjunction with the WebRTC WG.
+            <li>
+              Calendar API. An API that enables complete management of the device's calendars.
             </li>
-            <li id='messaging'>
-              Messaging API, an API to create and send a message. The API may be agnostic to the underlying 
-              messaging service (e.g. e-mail, SMS, MMS).
+            <li>
+              Contacts API. An API that enables complete management of the device's address books.
             </li>
-            <li id='network'>An API to discover the current network characteristics.</li>
-            <li id='battery'>An API to react to a device power status.</li>
-            <li id='sysinfo'>An API to retrieve data generically from sensors.</li>
-            <li id='applauncher'>
-              An API that allows Web applications to register themselves as handlers/providers based on 
-              identifiers and an API that enables other Web applications to discover these handlers/providers 
-              and gain permission to interact with them. This is commonly known as Web Intents, though the
-              final specification may carry a different name. This work will be carried out in conjunction 
-              with the Web Apps WG.
+            <li>
+              Telephony API. An API to interact with the phone system, for instance to dial a number,
+              pick up a call, route to voicemail, access the call log, etc.
             </li>
-            <li id='gallery'>
-              Gallery API, an API to access the user's media gallery services (e.g. pictures, music play lists).
+            <li>
+              File System API. An API that bridges the existing “File: Directories &amp; System” API to the actual
+              file systems known to the device.
             </li>
-            <li id='ui'>An API to manage vibration.</li>
-            <li id='menus'>An API to manage application menus.</li>
-            <li id='discovery'>
-              An API to discover and communicate with devices and services on the same device, on the local 
-              network, or directly connected, e.g. by USB and Bluetooth (<a href='#nb'>*</a>).
+            <li>
+              Messaging API. An API to send and receive messages (e.g. SMS, MMS, Email) as well as manage messages
+              stored on the device.
             </li>
-            <li id='bt'>An API to interact with services available over Bluetooth.</li>
-            <li id='qr'>An API to process QR codes extracting them from stills or streams and returning their content.</li>
-            <li id='appstore'>
-              An API to install Web apps and to manage a client-side collection of Web apps that a user has installed.
+            <li>
+              Device Capabilities API. An API the discover the capabilities available to the device.
+            </li>
+            <li>
+              Internet API. An API to manipulate low-level connections (e.g. TCP, UDP), including the ability to
+              listen for incoming connections.
+            </li>
+            <li>
+              System Settings API. An API to manage the system's settings (including notably time/clock settings).
+            </li>
+            <li>
+              Sensors API. A low-level API to provide access to the device's sensors.
+            </li>
+            <li>
+              Resource Lock API. Prevent resources from being turned off (e.g. screen dimming, internet connection, CPU
+              or GPU going to sleep mode).
+            </li>
+            <li>
+              Screen Orientation API. An API to manage the screen's current orientation.
+            </li>
+            <li>
+              Network Information API. An API to manipulate information pertaining to the network interface (mobile, WiFi, etc.),
+              such as listing available networks, current strength, etc.
+            </li>
+            <li>
+              Media Storage API. An API to manage the device's storage of specific content types (e.g. pictures).
+            </li>
+            <li>
+              USB API. An API to interact with USB and USB storage devices.
+            </li>
+            <li>
+              Browser API. An API that provides all the necessary items to build a Web browser.
+            </li>
+            <li>
+              Keyboard/IME API. An API to support implementing virtual keyboards.
+            </li>
+            <li>
+              Idle API. An API to be notified when the user is idle.
+            </li>
+            <li>
+              Power Management API. An API to manage the power consumption of the device, for instance by
+              turning the screen on or off, putting the CPU in sleep mode, etc.
+            </li>
+            <li>
+              Spellcheck API. An API to perform spell checking, including dictionary and suggestions access.
+            </li>
+            <li>
+              Background Services API. An API that enables a Web application to run in the background as
+              a daemon.
+            </li>
+            <li>
+              <strong style='color: red;'>Contentious</strong>: NFC API. Before there is sufficient consensus on
+              this item, please discuss it only on the <a href='http://lists.w3.org/Archives/Public/public-nfc/'>public-nfc</a>
+              mailing list.
+            </li>
+            <li>
+              Security Technology. This group may or may not work on a deliverable describing how such unsafe applications
+              can safely be delivered to end users.
             </li>
           </ul>
           <p>
-            (<span id='nb'>*</span>)<strong>Note</strong>: the Web and TV Interest Group and the Multimodal 
-            Interaction  Working Group are also working on topics related to discovery APIs. The Device APIs 
-            Working Group will liaise with them on these topics. As the discussion evolves, the groups will 
-            investigate the opportunity of creating a separate Working Group dedicated to local device discovery.
+            Note that where applicable, the group is free to split the above deliverables into several smaller specifications
+            that collectively address the same space, or conversely to join some of the above into a single specification.
           </p>
           <p>
             Where practical, the API specifications should use the <a href='http://www.w3.org/TR/WebIDL/'>Web IDL</a> 
@@ -208,7 +238,7 @@
           </p>
           <p>
             The Working Group may also enter into joint Task Forces with other groups (in particular with the 
-            Web Applications and WebRTC Working Groups), to collaborate on specifications that cross group boundaries.
+            Device APIs Working Group), to collaborate on specifications that cross group boundaries.
           </p>
         </section>
         <section>
