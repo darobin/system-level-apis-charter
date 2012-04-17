@@ -79,10 +79,10 @@
         <p>
           The System Level APIs Working Group aims to produce APIs that integrate closely with the
           operating system's functionality, thereby enabling an entire applicative ecosystem to be
-          written using nothing but Web technology.
+          written using nothing but the Web platform.
         </p>
         <p>
-          Creating the ability to produce applications relying primarily on Web technology, even if
+          Creating the ability to produce applications relying primarily on the Web platform, even if
           outside the browser's security model, extends the reach of the Web to new places and opens
           the door to greater cooperation between the Web and the operating system.
         </p>
@@ -93,7 +93,7 @@
         <p>
           The scope of this Working Group is this creation of API specifications for a device’s 
           services and capabilities that can not be exposed safely to Web applications. Devices 
-          in this context include  desktop computers, laptop computers, mobile Internet devices 
+          in this context include desktop computers, laptop computers, mobile Internet devices 
           (MIDs), cellular phones, TVs, cameras, and other connected devices.
         </p>
         <p>
@@ -172,7 +172,7 @@
               Device Capabilities API. An API the discover the capabilities available to the device.
             </li>
             <li>
-              Internet API. An API to manipulate low-level connections (e.g. TCP, UDP), including the ability to
+              Raw Sockets API. An API to manipulate low-level connections (e.g. TCP, UDP), including the ability to
               listen for incoming connections.
             </li>
             <li>
@@ -186,11 +186,13 @@
               or GPU going to sleep mode).
             </li>
             <li>
-              Screen Orientation API. An API to manage the screen's current orientation.
+              Screen Orientation API. An API to manage the screen's current orientation. (It may build atop the orientation-locking
+              API that WebApps is working on.)
             </li>
             <li>
               Network Information API. An API to manipulate information pertaining to the network interface (mobile, WiFi, etc.),
-              such as listing available networks, current strength, etc.
+              such as listing available networks, current strength, etc. (It may build atop the simpler network information
+              API that Device APIs is working on.)
             </li>
             <li>
               Media Storage API. An API to manage the device's storage of specific content types (e.g. pictures).
