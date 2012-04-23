@@ -165,7 +165,7 @@
               file systems known to the device.
             </li>
             <li>
-              Messaging API. An API to send and receive messages (e.g. SMS, MMS, Email) as well as manage messages
+              Messaging API. An API to send and receive messages (e.g. SMS, MMS, Email, IM) as well as manage messages
               stored on the device.
             </li>
             <li>
@@ -186,13 +186,12 @@
               or GPU going to sleep mode).
             </li>
             <li>
-              Screen Orientation API. An API to manage the screen's current orientation. (It may build atop the orientation-locking
-              API that WebApps is working on.)
+              Accounts API. An API to use existing, configured accounts and services, and for creating accounts of existing types.
             </li>
             <li>
-              Network Information API. An API to manipulate information pertaining to the network interface (mobile, WiFi, etc.),
-              such as listing available networks, current strength, etc. (It may build atop the simpler network information
-              API that Device APIs is working on.)
+              Network Interface API. An API to manipulate the network interfaces (mobile, WiFi, etc.),
+              such as listing available networks, current strength, etc. as well as configuring and enabling them.
+              (It may build atop the simpler network information API that Device APIs is working on.)
             </li>
             <li>
               Media Storage API. An API to manage the device's storage of specific content types (e.g. pictures).
@@ -240,7 +239,8 @@
           </p>
           <p>
             The Working Group may also enter into joint Task Forces with other groups (in particular with the 
-            Device APIs Working Group), to collaborate on specifications that cross group boundaries.
+            Device APIs Working Group), to collaborate on the deliverables above if specifications cross group 
+            boundaries.
           </p>
         </section>
         <section>
@@ -349,22 +349,27 @@
               in this group's deliverables, but that function inside the browser security model. Such APIs should
               be closely coordinated as they are likely to feature common aspects.
             </dd>
-            <dt><a id='html' href='http://www.w3.org/html/wg/'>HTML Working Group</a></dt>
+            <dt><a href='http://www.w3.org/html/wg/'>HTML Working Group</a></dt>
             <dd>
               The HTML Working Group’s deliverables cover the security model implemented in Web Browsers; this 
               security model imposes limitations on what an extended model for Web Applications can achieve.
             </dd>
-            <dt><a id='wai' href='http://www.w3.org/WAI/'>Web Accessibility Initiative</a>
+            <dt><a href='http://www.w3.org/WAI/'>Web Accessibility Initiative</a>
                 <a href='http://www.w3.org/WAI/PF/'>Protocols and Formats Working Group</a></dt>
             <dd>
               To ensure this Working Group’s deliverables support accessibility requirements, particularly with 
               regard to interoperability with assistive technologies, and inclusion in deliverables of guidance 
               for implementing the group’s deliverables in ways that support accessibility requirements.
             </dd>
-            <dt><a id='webapps' href='http://www.w3.org/2008/webapps/'>Web Applications Working Group</a></dt>
+            <dt><a href='http://www.w3.org/2008/webapps/'>Web Applications Working Group</a></dt>
             <dd>
               This group defines relevant specifications including <cite><a href='http://www.w3.org/TR/WebIDL/'>Web IDL</a></cite>, 
               and <cite><a href='http://www.w3.org/TR/FileAPI/'>File API</a></cite>.
+            </dd>
+            <dt><a href='http://www.w3.org/2011/webappsec/'>Web Application Security Working Group</a></dt>
+            <dd>
+              Since the Web security model is a core concern here, interactions with this group are strongly
+              encouraged.
             </dd>
           </dl>
         </section>
