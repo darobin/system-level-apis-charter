@@ -139,96 +139,112 @@
           <p>
             The working group will deliver the following specifications:
           </p>
-          <ul>
-            <li>
-              Alarm API. An API to manage the system's alarm daemon.
-            </li>
-            <li>
-              Application API. An API to launch other applications and communicate with them.
-            </li>
-            <li>
-              Bluetooth API. A low-level API to interact with the Bluetooth hardware available
-              on some devices.
-            </li>
-            <li>
-              Calendar API. An API that enables complete management of the device's calendars.
-            </li>
-            <li>
-              Contacts API. An API that enables complete management of the device's address books.
-            </li>
-            <li>
-              Telephony API. An API to interact with the phone system, for instance to dial a number,
-              pick up a call, route to voicemail, access the call log, etc.
-            </li>
-            <li>
-              File System API. An API that bridges the existing “File: Directories &amp; System” API to the actual
-              file systems known to the device.
-            </li>
-            <li>
-              Messaging API. An API to send and receive messages (e.g. SMS, MMS, Email, IM) as well as manage messages
-              stored on the device.
-            </li>
-            <li>
-              Device Capabilities API. An API the discover the capabilities available to the device.
-            </li>
-            <li>
-              Raw Sockets API. An API to manipulate low-level connections (e.g. TCP, UDP), including the ability to
-              listen for incoming connections.
-            </li>
-            <li>
-              System Settings API. An API to manage the system's settings (including notably time/clock settings).
-            </li>
-            <li>
-              Sensors API. A low-level API to provide access to the device's sensors.
-            </li>
-            <li>
-              Resource Lock API. Prevent resources from being turned off (e.g. screen dimming, internet connection, CPU
-              or GPU going to sleep mode).
-            </li>
-            <li>
-              Accounts API. An API to use existing, configured accounts and services, and for creating accounts of existing types.
-            </li>
-            <li>
-              Network Interface API. An API to manipulate the network interfaces (mobile, WiFi, etc.),
-              such as listing available networks, current strength, etc. as well as configuring and enabling them.
-              (It may build atop the simpler network information API that Device APIs is working on.)
-            </li>
-            <li>
-              Media Storage API. An API to manage the device's storage of specific content types (e.g. pictures).
-            </li>
-            <li>
-              USB API. An API to interact with USB and USB storage devices.
-            </li>
-            <li>
-              Browser API. An API that provides all the necessary items to build a Web browser.
-            </li>
-            <li>
-              Keyboard/IME API. An API to support implementing virtual keyboards.
-            </li>
-            <li>
-              Idle API. An API to be notified when the user is idle.
-            </li>
-            <li>
-              Power Management API. An API to manage the power consumption of the device, for instance by
-              turning the screen on or off, putting the CPU in sleep mode, etc.
-            </li>
-            <li>
-              Spellcheck API. An API to perform spell checking, including dictionary and suggestions access.
-            </li>
-            <li>
-              Background Services API. An API that enables a Web application to run in the background as
-              a daemon.
-            </li>
-            <li>
-              <strong style='color: red;'>Contentious</strong>: NFC API. Before there is sufficient consensus on
-              this item, please discuss it only on the <a href='http://lists.w3.org/Archives/Public/public-nfc/'>public-nfc</a>
-              mailing list.
-            </li>
-            <li>
-              Security Technology. This group may or may not work on a deliverable describing how such unsafe applications
-              can safely be delivered to end users.
-            </li>
-          </ul>
+          <dl>
+            <dt>System Services</dt>
+            <dd>
+              <ul>
+                <li>
+                  Alarm API. An API to manage the system's alarm daemon.
+                </li>
+                <li>
+                  Application API. An API to launch other applications and communicate with them.
+                </li>
+                <li>
+                  Calendar API. An API that enables complete management of the device's calendars.
+                </li>
+                <li>
+                  Contacts API. An API that enables complete management of the device's address books.
+                </li>
+                <li>
+                  File System API. An API that bridges the existing “File: Directories &amp; System” API to the actual
+                  file systems known to the device.
+                </li>
+                <li>
+                  Messaging API. An API to send and receive messages (e.g. SMS, MMS, Email, IM) as well as manage messages
+                  stored on the device.
+                </li>
+                <li>
+                  Device Capabilities API. An API the discover the capabilities available to the device.
+                </li>
+                <li>
+                  Raw Sockets API. An API to manipulate low-level connections (e.g. TCP, UDP), including the ability to
+                  listen for incoming connections.
+                </li>
+                <li>
+                  System Settings API. An API to manage the system's settings (including notably time/clock settings).
+                </li>
+                <li>
+                  Accounts API. An API to use existing, configured accounts and services, and for creating accounts of existing types.
+                </li>
+                <li>
+                  Media Storage API. An API to manage the device's storage of specific content types (e.g. pictures).
+                </li>
+                <li>
+                  Browser API. An API that provides all the necessary items to build a Web browser.
+                </li>
+                <li>
+                  Keyboard/IME API. An API to support implementing virtual keyboards.
+                </li>
+                <li>
+                  Idle API. An API to be notified when the user is idle.
+                </li>
+                <li>
+                  Spellcheck API. An API to perform spell checking, including dictionary and suggestions access.
+                </li>
+                <li>
+                  Background Services API. An API that enables a Web application to run in the background as
+                  a daemon.
+                </li>
+              </ul>
+            </dd>
+            <dt>Hardware Capabilities</dt>
+            <dd>
+              <ul>
+                <li>
+                  Bluetooth API. A low-level API to interact with the Bluetooth hardware available
+                  on some devices.
+                </li>
+                <li>
+                  Telephony API. An API to interact with the phone system, for instance to dial a number,
+                  pick up a call, route to voicemail, access the call log, etc.
+                </li>
+                <li>
+                  Sensors API. A low-level API to provide access to the device's sensors.
+                </li>
+                <li>
+                  Resource Lock API. Prevent resources from being turned off (e.g. screen dimming, internet connection, CPU
+                  or GPU going to sleep mode).
+                </li>
+                <li>
+                  Network Interface API. An API to manipulate the network interfaces (mobile, WiFi, etc.),
+                  such as listing available networks, current strength, etc. as well as configuring and enabling them.
+                  (It may build atop the simpler network information API that Device APIs is working on.)
+                </li>
+                <li>
+                  USB API. An API to interact with USB and USB storage devices.
+                </li>
+                <li>
+                  Power Management API. An API to manage the power consumption of the device, for instance by
+                  turning the screen on or off, putting the CPU in sleep mode, etc.
+                </li>
+                <li>
+                  <strong style='color: red;'>Contentious</strong>: NFC API. Before there is sufficient consensus on
+                  this item, please discuss it only on the <a href='http://lists.w3.org/Archives/Public/public-nfc/'>public-nfc</a>
+                  mailing list.
+                </li>
+              </ul>
+            </dd>
+            <dt>Security Technology</dt>
+            <dd>
+              <p>
+                This group may or may not work on deliverables describing how such unsafe applications
+                can safely be delivered to end users. Input welcome.
+              </p>
+              <ul>
+                <li>Secure Element API. Exposes access to the device's secure element (if available).</li>
+              </ul>
+            </dd>
+          </dl>
           <p>
             Note that where applicable, the group is free to split the above deliverables into several smaller specifications
             that collectively address the same space, or conversely to join some of the above into a single specification.
