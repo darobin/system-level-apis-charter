@@ -147,6 +147,16 @@
             The working group will deliver the following specifications:
           </p>
           <dl>
+            <dt>Security Model for Platform Applications</dt>
+            <dd>
+              A description of the security model for platform applications, particularly how the security 
+              model differs from the traditional browser-based security model.
+            </dd>
+            <dt>Execution Model for Platform Applications</dt>
+            <dd>
+              A description of the execution model for platform applications, particularly how the execution 
+              model differs from the traditional browser-based execution model.
+            </dd>
             <dt>System Services</dt>
             <dd>
               <ul>
@@ -176,6 +186,9 @@
                 <li>
                   Raw Sockets API. An API to manipulate low-level connections (e.g. TCP, UDP), including the ability to
                   listen for incoming connections.
+                </li>
+                <li>
+                  DNS Resolution API. An API for resolving DNS names.
                 </li>
                 <li>
                   System Settings API. An API to manage the system's settings (including notably time/clock settings).
@@ -242,21 +255,6 @@
                   this item, please discuss it only on the <a href='http://lists.w3.org/Archives/Public/public-nfc/'>public-nfc</a>
                   mailing list.
                 </li>
-              </ul>
-            </dd>
-            <dt>Security Technology</dt>
-            <dd>
-              <p>
-                This group may or may not work on deliverables describing how such unsafe applications
-                can safely be delivered to end users. Input welcome.
-              </p>
-              <ul>
-                <li>
-                  Generic security mechanism. Each API will need to be exposed in a manner that ensures users' security
-                  as much as possible. It may be that the security will be defined on an API-by-API basis, but if it
-                  is possible to design a generic security mechanism that covers all or at least several of the APIs
-                  then the group should strive to produce it.
-                </li>
                 <li>
                   Secure Elements API. An API enabling the discovery, introspection, and interaction with hardware 
                   tokens (Secure Elements) that offer secure services such as tamper-proof storage, cryptographic 
@@ -270,13 +268,17 @@
             that collectively address the same space, or conversely to join some of the above into a single specification.
           </p>
           <p>
-            Where practical, the API specifications should use the <a href='http://www.w3.org/TR/WebIDL/'>Web IDL</a> 
+            Where practical, the API specifications should use the <a href='http://www.w3.org/TR/WebIDL/'>Web IDL</a>
             formalism.
           </p>
           <p>
+            Each specification must contain a section detailing any known security and privacy implications for implementors, 
+            authors, and end users. The Working Group will actively seek security and privacy review on all its specifications. 
+          </p>
+          <p>
             The Working Group may also enter into joint Task Forces with other groups (in particular with the 
-            Device APIs Working Group), to collaborate on the deliverables above if specifications cross group 
-            boundaries.
+            Web Applications and Device APIs Working Groups), to collaborate on the deliverables above if 
+            specifications cross group boundaries.
           </p>
         </section>
         <section>
@@ -295,15 +297,12 @@
             the APIs it is developing.
           </p>
           <p>
-            The Working Group is also planning to work on Best Practices for Privacy-sensitive Web applications, 
-            as well as documenting Privacy Use Cases and Requirements in Working Group Notes.
-          </p>
-          <p>
             Other non-normative documents may be created such as:
           </p>
           <ul id='ig-other-deliverables'>
-            <li>Primers</li>
+            <li>Primers for each specification</li>
             <li>Requirements and use case document for specifications</li>
+            <li>Schemas for languages developed by the group (if any)</li>
             <li>Non-normative group notes</li>
           </ul>
           <p>
@@ -313,48 +312,8 @@
         </section>
         <section id='milestones'>
           <h3>Milestones</h3>
-          <blockquote>
-            <p>
-              Bistromathics itself is simply a revolutionary new way of understanding the behaviour of numbers. 
-              Just as Albert Einstein's general relativity theory observed that space was not an absolute but 
-              depended on the observer's movement in time, and that time was not an absolute, but depended on 
-              the observer's movement in space, so it is now realized that numbers are not absolute, but depend 
-              on the observer's movement in restaurants.
-            </p>
-            <p>
-              (...)
-            </p>
-            <p>
-              The first nonabsolute number is the number of people for whom the table is reserved. This will vary 
-              during the course of the first three telephone calls to the restaurant, and then bear no apparent 
-              relation to the number of people who actually turn up, or the number of people who subsequently join 
-              them after the show/match/party/gig, or to the number of people who leave when they see who else has 
-              shown up.
-            </p>
-            <p>
-              The second nonabsolute number is the given time of arrival, which is now known to be one of those 
-              most bizarre mathematical concepts, a recipriversexcluson, a number whose existence can only be 
-              defined as being anything other than itself. In other words, the given time of arrival is the one 
-              moment of time at which it is impossible that any member of the party will arrive. 
-              Recipriversexclusons now play a vital part in many branches of mathematics, including statistics and 
-              accountancy, and also form the basic equations used to engineer the Somebody Else's Problem field.
-            </p>
-            <p>
-              The third and most mysterious piece of nonabsoluteness of all lies in the relationship between the 
-              number of items on the bill, the cost of each item, the number of people at the table and what they
-              are each prepared to pay for. (The number of people who have actually brought any money is only a 
-              sub-phenomenon in this field.)
-            </p>
-          </blockquote>
           <p>
-            It is a known and well-accepted fact of W3C Working Group life that the dates specified in the Milestones
-            section of a group's charter are recipriversexclusons. The date at which the Working Group will ship that
-            specification at the indicated level of maturity can be before or after the indicated date, or the group
-            may have abandoned the deliverable, but it can never be within the indicated time frame.
-          </p>
-          <p>
-            The maths involved in producing correct recipriversexclusons being complex and resource intensive, the
-            charter's author has decided to simply do without.
+            The Working Group will maintain an updated timeline of the working group deliverables. 
           </p>
         </section>
       </section>
