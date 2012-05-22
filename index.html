@@ -144,7 +144,13 @@
         <section id='rec-track'>
           <h3>Recommendation-Track Deliverables</h3>
           <p>
-            The working group will deliver the following specifications:
+            The working group will deliver the specifications listed below. In a number of cases, pointers have
+            been provided to existing documents that address requirements similar to those of given deliverables.
+            These are provided solely as aids to the reviewing process and should not presume that the cited documents
+            will be submitted to W3C or that the deliverable developed by the group will take one of these for its starting
+            point. In some cases, links are not provided. This should not be taken to entail that there is no prior
+            work on this item, but simply that it may not be available in a form suitable for linking (in some of those
+            cases further information can be obtained through the <a href='https://wiki.mozilla.org/WebAPI'>B2G WebAPI document</a>).
           </p>
           <dl>
             <dt>Security Model for Platform Applications</dt>
@@ -162,48 +168,63 @@
               <ul>
                 <li>
                   Alarm API. An API to manage the system's alarm daemon.
+                  Example: <a href='https://developer.tizen.org/help/topic/org.tizen.help.web.api.device/tizen/alarm.html'>Tizen Alarm</a>.
                 </li>
                 <li>
                   Application API. An API to launch other applications and communicate with them.
+                  Example: <a href='https://developer.tizen.org/help/topic/org.tizen.help.web.api.device/tizen/application.html'>Tizen Application</a>
                 </li>
                 <li>
                   Calendar API. An API that enables complete management of the device's calendars.
+                  Examples: <a href='https://wiki.mozilla.org/WebAPI/CalendarAPI'>B2G Calendar</a>, 
+                  <a href='https://developer.tizen.org/help/topic/org.tizen.help.web.api.device/tizen/calendar.html'>Tizen Calendar</a>.
                 </li>
                 <li>
                   Contacts API. An API that enables complete management of the device's address books.
+                  Examples: <a href='https://developer.tizen.org/help/topic/org.tizen.help.web.api.device/tizen/contact.html'>Tizen Contacts</a>,
+                  <a href='https://wiki.mozilla.org/WebAPI/ContactsAPI'>B2G Contacts</a>
                 </li>
                 <li>
                   File System API. An API that bridges the existing “File: Directories &amp; System” API to the actual
                   file systems known to the device.
+                  Examples: <a href='https://developer.tizen.org/help/topic/org.tizen.help.web.api.device/tizen/filesystem.html'>Tizen FileSystem</a>,
+                  <a href='https://wiki.mozilla.org/WebAPI/DeviceStorageAPI'>B2G Device Storage</a>.
                 </li>
                 <li>
                   Messaging API. An API to send and receive messages (e.g. SMS, MMS, Email, IM) as well as manage messages
                   stored on the device.
+                  Examples: <a href='https://developer.tizen.org/help/topic/org.tizen.help.web.api.device/tizen/messaging.html'>Tizen Messaging</a>,
+                  <a href='https://wiki.mozilla.org/WebAPI/WebSMS'>B2G Web SMS</a>.
                 </li>
                 <li>
                   Device Capabilities API. An API the discover the capabilities available to the device.
+                  Example: <a href='https://developer.tizen.org/help/topic/org.tizen.help.web.api.device/tizen/systeminfo.html'>Tizen System Info</a>
                 </li>
                 <li>
                   Raw Sockets API. An API to manipulate low-level connections (e.g. TCP, UDP), including the ability to
                   listen for incoming connections.
+                  Example: <a href='http://code.google.com/chrome/extensions/experimental.socket.html'>Chrome Sockets</a>
                 </li>
                 <li>
                   DNS Resolution API. An API for resolving DNS names.
                 </li>
                 <li>
                   System Settings API. An API to manage the system's settings (including notably time/clock settings).
+                  Example: <a href='https://wiki.mozilla.org/WebAPI/SettingsAPI'>B2G Settings</a>.
                 </li>
                 <li>
                   Accounts API. An API to use existing, configured accounts and services, and for creating accounts of existing types.
                 </li>
                 <li>
                   Media Storage API. An API to manage the device's storage of specific content types (e.g. pictures).
+                  Example: <a href='https://developer.tizen.org/help/topic/org.tizen.help.web.api.device/tizen/mediacontent.html'>Tizen Media Content</a>.
                 </li>
                 <li>
                   Browser API. An API that provides all the necessary items to build a Web browser. Most notably, this
                   provides all that is needed in order to safely instantiate a viewport onto the open Web, pretend that
                   such a viewport is the top level window even if the browser's chrome is itself written using Web
                   technology, etc.
+                  Example: <a href='https://wiki.mozilla.org/WebAPI/BrowserAPI'>B2G BrowserAPI</a>
                 </li>
                 <li>
                   Web Intent Registration API. An API that makes it possible for Web Intent services to register themselves
@@ -211,9 +232,11 @@
                 </li>
                 <li>
                   Keyboard/IME API. An API to support implementing virtual keyboards.
+                  Example: <a href='http://code.google.com/chrome/extensions/experimental.input.ime.html'>Chrome IME</a>
                 </li>
                 <li>
                   Idle API. An API to be notified when the user is idle.
+                  Example: <a href='https://wiki.mozilla.org/WebAPI/IdleAPI'>B2G Idle</a>
                 </li>
                 <li>
                   Spellcheck API. An API to perform spell checking, including dictionary and suggestions access.
@@ -221,6 +244,7 @@
                 <li>
                   Background Services API. An API that enables a Web application to run in the background as
                   a daemon.
+                  Example: <a href='http://groups.google.com/group/mozilla.dev.webapi/browse_thread/thread/3455cb056e40d095'>B2G Background Services</a>.
                 </li>
               </ul>
             </dd>
@@ -230,34 +254,46 @@
                 <li>
                   Bluetooth API. A low-level API to interact with the Bluetooth hardware available
                   on some devices.
+                  Examples: <a href='https://developer.tizen.org/help/topic/org.tizen.help.web.api.device/tizen/bluetooth.html'>Tizen Bluetooth</a>,
+                  <a href='https://wiki.mozilla.org/WebAPI/WebBluetooth'>B2G Web Bluetooth</a>.
                 </li>
                 <li>
                   Telephony API. An API to interact with the phone system, for instance to dial a number,
                   pick up a call, route to voicemail, access the call log, etc.
+                  Examples: <a href='https://wiki.mozilla.org/WebAPI/WebTelephony'>B2G Web Telephony</a>,
+                  <a href='https://developer.tizen.org/help/topic/org.tizen.help.web.api.device/tizen/call.html'>Tizen Call</a>.
                 </li>
                 <li>
-                  Sensors API. A low-level API to provide access to the device's sensors.
+                  Sensors API. A low-level API to provide access to the device's sensors. Prior work from the Device APIs WG that
+                  was put on hold there will be transitioned to this group.
                 </li>
                 <li>
                   Resource Lock API. Prevent resources from being turned off (e.g. screen dimming, internet connection, CPU
                   or GPU going to sleep mode).
+                  Example: <a href='https://wiki.mozilla.org/WebAPI/ResourceLockAPI'>B2G Resource Lock</a>.
                 </li>
                 <li>
                   Network Interface API. An API to manipulate the network interfaces (mobile, WiFi, etc.),
                   such as listing available networks, current strength, etc. as well as configuring and enabling them.
                   (It may build atop the simpler network information API that Device APIs is working on.)
+                  Examples: <a href='https://wiki.mozilla.org/WebAPI/WebMobileConnection'>B2G Mobile Connection</a>,
+                  <a href='http://groups.google.com/group/mozilla.dev.webapi/browse_thread/thread/ed980c42261c5f4a'>B2G WiFi Information</a>.
                 </li>
                 <li>
                   USB API. An API to interact with USB and USB storage devices.
+                  Example: <a href='https://wiki.mozilla.org/WebAPI/WebUSB'>B2G Web USB</a>.
                 </li>
                 <li>
                   Power Management API. An API to manage the power consumption of the device, for instance by
                   turning the screen on or off, putting the CPU in sleep mode, etc.
+                  Example: <a href='https://wiki.mozilla.org/WebAPI/PowerManagementAPI'>B2G Power Management</a>
                 </li>
                 <li>
                   <strong style='color: red;'>Contentious</strong>: NFC API. Before there is sufficient consensus on
                   this item, please discuss it only on the <a href='http://lists.w3.org/Archives/Public/public-nfc/'>public-nfc</a>
                   mailing list.
+                  Examples: <a href='https://wiki.mozilla.org/WebAPI/WebNFC'>B2G Web NFC</a>,
+                  <a href='https://developer.tizen.org/help/topic/org.tizen.help.web.api.device/tizen/nfc.html'>Tizen NFC</a>.
                 </li>
                 <li>
                   Secure Elements API. An API enabling the discovery, introspection, and interaction with hardware 
