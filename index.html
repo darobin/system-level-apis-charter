@@ -74,7 +74,7 @@
             </tr>
             <tr>
               <th>Usual Meeting Schedule</th>
-              <td>Teleconferences: none<br/>Face-to-face: 2-3 per year (only as needed)</td>
+              <td>Teleconferences: none (only as needed)<br/>Face-to-face: 2-3 per year (only as needed)</td>
             </tr>
           </tbody>
         </table>
@@ -83,28 +83,40 @@
       <section id='goals'>
         <h2>Goals</h2>
         <p>
-          The System Applications Working Group aims to produce APIs that integrate closely with the
-          operating system's functionality, thereby enabling an entire applicative ecosystem to be
-          written using nothing but the Web platform.
-        </p>
-        <p>
-          Creating the ability to produce applications relying primarily on the Web platform, even if
-          outside the browser's security model, extends the reach of the Web to new places and opens
-          the door to greater cooperation between the Web and the operating system.
+          The System Applications Working Group aims to produce a runtime environment and a set of APIs 
+          that let applications integrate closely with the operating system's functionality using nothing 
+          but the Web platform. Creating the ability to produce applications relying solely on the web 
+          platform extends the reach of the Web to new places and opens the door to greater cooperation 
+          between the Web and the operating system. 
         </p>
       </section>
       
       <section class='scope' id='scope'>
         <h2>Scope</h2>
         <p>
-          The scope of this Working Group is this creation of API specifications for a device’s 
-          services and capabilities that can not be exposed safely to Web applications. Devices 
-          in this context include desktop computers, laptop computers, mobile Internet devices 
-          (MIDs), cellular phones, TVs, cameras, and other connected devices.
+          The scope of the System Applications Working Group covers the technologies related to developing 
+          Web application that integrate closely with a host operating system, including a runtime environment 
+          (with both an execution model and a security model) as well as markup vocabularies and application 
+          programming interfaces for describing and controlling the applications interaction with the host 
+          operating system.
+        </p>
+        <p>
+          The working group will focus on those operating system interactions that cannot necessarily be exposed safely 
+          to Web applications executing in the traditional browser security model. The working group will 
+          consider a broad category of host operating systems, including those running on desktop 
+          computers, laptop computers, mobile Internet devices (MIDs), cellular phones, TVs, cameras, 
+          and other connected devices.
         </p>
         <p>
           Priority will be given to developing simple and consensual APIs, leaving more complex 
-          features to future versions.
+          features to future versions. The group should adopt, refine and when needed, extend, 
+          existing practices where possible. The Working Group should also take into account 
+          the fact that some deliverables will most likely be tied to widely deployed platforms. 
+        </p>
+        <p>
+          The Working Group is expected to deliver APIs optimised for use with Javascript. If relevant, the group may
+          consider producing additional bindings for other languages in cooperation with the organisations responsible 
+          for them.
         </p>
         <p>
           This Working Group’s deliverables must address issues of <strong><em>accessibility</em></strong>,
@@ -117,23 +129,12 @@
           maintain errata as required for the continued relevance and usefulness of the specifications 
           it produces.
         </p>
-        <p>
-          Note that this group does not presume of the exact context in which these APIs will be used,
-          beyond the fact that they will not be available in security-sensitive settings such as arbitrary
-          Web content. It may be possible to make use of this functionality in traditional applications,
-          just as well as it may be exposed for instance to browser extensions.
-        </p>
         <section>
           <h3>Success Criteria</h3>
           <p>
             To advance to Proposed Recommendation, each specification is expected to have two independent 
             implementations of all features defined in the specification, including implementation on a 
             constrained device (e.g. mobile phone, TV, camera).
-          </p>
-          <p>
-            APIs that are demonstrated to be implementable with the default browser security context
-            should not be released by this group; it is recommended instead that they be transferred
-            to the Web Applications or Device APIs Working Groups.
           </p>
         </section>
       </section>
